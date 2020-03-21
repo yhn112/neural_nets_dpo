@@ -16,13 +16,13 @@
 * [Домашка из ШАД с реализацией собственной нейронки](https://github.com/FUlyankin/neural_nets_dpo/tree/master/logi_2020/week02/homework01)
 * [Свёртки по котам и собакам](https://github.com/FUlyankin/neural_nets_dpo/blob/master/logi_2020/week06/hometask/HW_cats.ipynb) 
 
+* Дз по ганам в тетрадке с ганами 
+* [Дз по автопереводу с украинского на русский](https://github.com/yandexdataschool/nlp_course/blob/2019/week01_embeddings/homework.ipynb)
+
 Что ещё? 
 
-* Большое дз по сегментации после 7 пары 
-* Большое дз по текстам после 11-12 пары 
-* Дз по автопереводу с украинского на русский после 10 пары 
-* Дз по ганам после 9 пары 
-* Дз с VAE после 8 пары 
+* [Большое дз по сегментации](https://github.com/FUlyankin/neural_nets_dpo/blob/master/logi_2020/week07/Hometask_1.ipynb)
+* [Большое дз по текстам](https://github.com/FUlyankin/neural_nets_dpo/blob/master/logi_2020/week12/HW_texts.ipynb)
 * Дз с воровством ELMO после 13 пары 
 
 
