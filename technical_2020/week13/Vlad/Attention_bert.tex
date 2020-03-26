@@ -269,6 +269,16 @@
 
 
 \begin{frame}{Attention}
+		\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{images/encoder-decoder-attention}
+		\label{fig:seq2seq}
+	\end{figure}
+
+	
+\end{frame}
+
+\begin{frame}{Attention}
 
 	\begin{figure}
 	\centering
@@ -336,7 +346,7 @@
 
 Выводы:
 \begin{enumerate}
-	\item 8 слоев LSTM (8 карл!)
+	\item 8 слоев LSTM (8 Карл!)
 	\item в attention 2 слоя dense. 
 	\item Собираем слова из морфем - пытаемся победить out-of-vacabular.
 	\item Модель стала иногда сексистом и фашистом - требуются слишком большие дата сеты, чтобы учить эту большую прелесть.
@@ -570,6 +580,79 @@ BERT - Bidirectional Encoder Representations from Transformers
 \end{figure}
 \end{frame}
 
+\begin{transitionframe}
+	\begin{center}
+		\Huge  ELMO
+	\end{center}
+\end{transitionframe}
 
+\begin{frame}{Серия вопросов в зал}
+Как работают разные эмбединги?
+
+В чем, по вашему мнению, их главная проблема?
+\end{frame}
+
+\begin{frame}{Картиночка про решение проблемы}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{images/elmo-embedding-robin-williams}
+	\label{fig:seq2seq}
+\end{figure}
+\end{frame}
+
+\begin{frame}{ELMO}
+	
+Захватываем контекст предложения через biderictional LSTM. Таким образом мы захватываем и контекст предложения (да, надо очень очень много данных, не обучайте это дома)
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/elmo-word-embedding}
+	\label{fig:seq2seq}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{ELMO}
+	Учится понимать язык ELMO следующим образом - оно берет большой дата сет и пытается предсказать следующее слово в предложении.	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.4\linewidth]{images/Bert-language-modeling}
+		\label{fig:seq2seq}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{ELMO}
+	Применяем	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.75\linewidth]{images/elmo-embedding}
+		\label{fig:seq2seq}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ELMO}
+	Применяем	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.75\linewidth]{images/elmo-embedding}
+		\label{fig:seq2seq}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Итого}
+Почему это все стало круто и популярно?
+\begin{enumerate}
+	\item Идея с вниманием стала ключевой - таким образом мы можем тянуть информацию через всю последовательность
+	\item Внимание можно параллелизовать, LSTM намного сложнее
+	\item Придумали как сделать так, чтобы не размечать данные
+	\item Купили много GPU
+	\item  Посадили кучу инженеров, которые заставили это все учиться!
+\end{enumerate}
+Ну и маленькая мысль в конце - за курс мы разобрали кубики нейронных сетей и посмотрели какой лютый треш можно из этих кубиков делать. Современный моделист в нейронных сетях - скорее инженер, нежели аналитик
+\end{frame}
 
 \end{document}
